@@ -6,34 +6,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header class="site-nav"><div class="nav-inner">
         <a class="brand" href="./index.html"><span class="brand-mark"><i class="fa-solid fa-atom"></i></span>NGUYÊN TỐ<span style="color:var(--accent)">.</span></a>
             <span class="nav-tag">
-        <svg class="pointer-arrow" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <!-- Arrowhead Marker -->
-                    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent)" />
-                    </marker>
-                </defs>
+                <svg class="pointer-arrow" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Arrowhead Marker -->
+                            <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent)" />
+                            </marker>
+                        </defs>
 
-                <!-- Curved Dashed Path pointing to the button -->
-                <path d="M 20 80 Q 100 10 175 45" 
-                        fill="none" 
-                        stroke="var(--accent)" 
-                        stroke-width="3" 
-                        stroke-dasharray="6,6" 
-                        stroke-linecap="round"
-                        marker-end="url(#arrow)" />
-        </svg>
-        <a href="./getstarted.html" class="intro-link">
-          <button class="start-btn" type="button">Bắt đầu</button>
-        </a>
-        <i class="fa-solid fa-flask me-2"></i>Không gian khám phá hóa học
-      </span>
+                        <!-- Curved Dashed Path pointing to the button -->
+                        <path d="M 20 80 Q 100 10 175 45" 
+                                fill="none" 
+                                stroke="var(--accent)" 
+                                stroke-width="3" 
+                                stroke-dasharray="6,6" 
+                                stroke-linecap="round"
+                                marker-end="url(#arrow)" />
+                </svg>
+                <div class="start-and-solo">
+                    <a href="./getstarted.html" class="intro-link">
+                    <button class="start-btn" type="button">Bắt đầu</button>
+                    </a>
+                    <div class="area">
+                        <i class="fa-solid fa-flask me-2"></i>Không gian khám phá hóa học 
+                    </div>
+                </div>
+            </span> 
     </header>
     <div class="quiz-container">
     <!-- Header hidden during setup screen -->

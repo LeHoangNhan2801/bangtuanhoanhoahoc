@@ -32,14 +32,22 @@ body {
     border-bottom:1px solid rgba(154,172,196,.15)
 }
 
-.btn {
+.start-btn {
     background-color: var(--accent);
     border: 1px solid var(--accent);
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     margin-right: 10px;
+    width: 100%
 }
+
+.start-and-solo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 .intro-link {
     text-decoration: none;
@@ -72,7 +80,8 @@ body {
     font-weight:800;
     text-decoration:none;
     letter-spacing:-.4px;
-    font-size:1.1rem}
+    font-size:1.1rem;
+}
 
 .brand-mark {
     display:inline-grid;
@@ -92,6 +101,7 @@ body {
 .nav-tag {
     color:var(--muted);
     font-size:.82rem;
+    display: flex;
 }
 
 .page-shell {
@@ -108,8 +118,40 @@ body {
     font-size:.83rem;
 }
 
-@media(max-width:600px) {
-    .nav-inner{padding:12px 16px}
-    .nav-tag{display:none}
-    .page-shell{padding:24px 14px 35px}
+@media(max-width: 600px) {
+
+    .site-nav {
+        flex-direction: row;          
+        justify-content: space-between; 
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-inner {
+        flex-direction: row;          
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;                    
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .page-shell {
+        padding: 24px 14px 35px;
+    }
+
+    .nav-tag svg {
+        display: none;
+    }
+
+    .nav-tag .area {
+        display: none;
+    }
+
+    .nav-tag {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
 }

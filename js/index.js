@@ -19,7 +19,7 @@
    if (c.includes('post-transition') || c.includes('hau chuyen tiep')) return 'post-transition';
    if (c.includes('metalloid') || c.includes('a kim')) return 'metalloid';
    if (c.includes('noble gas') || c.includes('khi hiem')) return 'noble-gas';
-   if (c.includes('halogen')) return 'nonmetal';
+   if (c.includes('halogen')) return 'halogen';
    if (c.includes('lanthanide')) return 'lanthanide';
    if (c.includes('actinide')) return 'actinide';
    if (c.includes('nonmetal') || c.includes('phi kim')) return 'nonmetal';
@@ -31,6 +31,7 @@
    if (cls === 'noble-gas') return 'noble';
    if (cls === 'nonmetal') return 'nonmetal';
    if (cls === 'metalloid') return 'metalloid';
+   if (cls === 'halogen') return 'halogen';
    if (['alkali-metal','alkaline-earth','transition-metal','post-transition','lanthanide','actinide'].includes(cls)) return 'metal';
    return 'unknown';
  }
@@ -42,6 +43,7 @@
    if (c.includes('post-transition')) return 'Kim loại hậu chuyển tiếp';
    if (c.includes('metalloid') || c.includes('a kim')) return 'Á kim';
    if (c.includes('noble gas') || c.includes('khi hiem')) return 'Khí hiếm';
+   if (c.includes('halogen') || c.includes('halogen')) return 'Halogen';
    if (c.includes('lanthanide')) return 'Họ Lanthanide';
    if (c.includes('actinide')) return 'Họ Actinide';
    if (c.includes('nonmetal') || c.includes('phi kim')) return 'Phi kim';

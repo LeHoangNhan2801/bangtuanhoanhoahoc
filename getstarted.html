@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/start.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="site-nav">
@@ -37,20 +38,24 @@
                                 stroke-linecap="round"
                                 marker-end="url(#arrow)" />
                 </svg>
-        <a href="./getstarted.html" class="intro-link">
-          <button class="start-btn" type="button">Bắt đầu</button>
-        </a>
-        <i class="fa-solid fa-flask me-2"></i>Không gian khám phá hóa học
-      </span>   
+                <div class="start-and-solo">
+                    <a href="./getstarted.html" class="intro-link">
+                    <button class="start-btn" type="button">Bắt đầu</button>
+                    </a>
+                    <div class="area">
+                        <i class="fa-solid fa-flask me-2"></i>Không gian khám phá hóa học 
+                    </div>
+                </div>
+            </span>   
         </div>
     </header>
     <div class="view">
         <div class="view-logo">
-            <span class="brand-mark"><i class="fa-solid fa-atom"></i></span>
-            <i class="fa-solid fa-x"></i>
-            <span class="brand-mark brand-mark-cap"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="brand-mark" data-aos="fade-right"><i class="fa-solid fa-atom"></i></span>
+            <i class="fa-solid fa-x" data-aos="zoom-in"></i>
+            <span class="brand-mark brand-mark-cap" data-aos="fade-left"><i class="fa-solid fa-graduation-cap"></i></span>
         </div>
-        <span class="introduction">Chào mừng đến với bảng tuần hoàn của chúng tôi</span>
+        <span class="introduction" data-aos="zoom-in">Chào mừng đến với bảng tuần hoàn của chúng tôi</span>
     </div>
     <!-- <div class="intro">
         <h1>HƯỚNG DẪN SỬ DỤNG WEBSITE BẢNG TUẦN HOÀN CÁC NGUYÊN TỐ HÓA HỌC</h1>
@@ -156,11 +161,11 @@
 
     <div class="guide-container">
         <header class="guide-header">
-            <h1>Hướng Dẫn Sử Dụng</h1>
-            <p>Khám phá cách tận dụng tối đa bảng tuần hoàn các nguyên tố hóa học.</p>
+            <h1 data-aos="fade-up">Hướng Dẫn Sử Dụng</h1>
+            <p data-aos="fade-up">Khám phá cách tận dụng tối đa bảng tuần hoàn các nguyên tố hóa học.</p>
         </header>
         <div class="title-start">
-            <h2>Giới thiệu chung</h2>
+            <h2 data-aos="fade-up">Giới thiệu chung</h2>
             <div class="guide-grid">
                 <div class="card-front">
                     <p>Website Bảng tuần hoàn các nguyên tố hóa học được xây dựng nhằm hỗ trợ người dùng tra cứu, tìm hiểu và học tập về 118 nguyên tố hóa học một cách thuận tiện. Trang web có giao diện hiện đại, cách trình bày trực quan và các chức năng tìm kiếm, phân loại nguyên tố, xem thông tin chi tiết.</p>
@@ -171,17 +176,17 @@
         </div>
         </div>
         <div class="title-start">
-            <h2>Hướng dẫn sử dụng các chức năng</h2>
+            <h2 data-aos="fade-up">Hướng dẫn sử dụng các chức năng</h2>
             <div class="guide-grid">
                 <!-- Card 1 -->
-                <div class="guide-card">
+                <div class="guide-card" data-aos="fade-up">
                     <div class="card-badge">01</div>
                     
                     <!-- Default Content -->
                     <div class="card-front">
                     <h3>Truy Cập & Giao Diện</h3>
                     <p>Mở trang chủ để thấy toàn bộ 118 nguyên tố được phân loại màu sắc rõ ràng theo nhóm kim loại, phi kim và khí hiếm.</p>
-                    <div class="mini-preview">Di chuột để xem hướng dẫn</div>
+                    <div class="mini-preview">Di chuột hoặc nhấn để xem hướng dẫn</div>
                     </div>
                     
                     <!-- Instruction Content (Swaps in on hover) -->
@@ -197,12 +202,12 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="guide-card">
+                <div class="guide-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="card-badge">02</div>
                     <div class="card-front">
                     <h3>Tìm Kiếm Nhanh</h3>
                     <p>Sử dụng thanh tìm kiếm phía trên để tra cứu nhanh bằng tên nguyên tố (Oxygen), ký hiệu (O), hoặc số hiệu nguyên tử.</p>
-                    <div class="mini-preview">Di chuột để xem hướng dẫn</div>
+                    <div class="mini-preview">Di chuột hoặc nhấn để xem hướng dẫn</div>
                     </div>
                     <div class="card-back">
                     <h4>💡 Hướng dẫn chi tiết:</h4>
@@ -215,12 +220,12 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="guide-card">
+                <div class="guide-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="card-badge">03</div>
                     <div class="card-front">
                     <h3>Bộ Lọc Nhóm Nguyên Tố</h3>
                     <p>Nhấn vào các nút lọc nhanh để ẩn/hiện các nhóm nguyên tố cụ thể, giúp việc học tập trung và hiệu quả hơn.</p>
-                    <div class="mini-preview">Di chuột để xem hướng dẫn</div>
+                    <div class="mini-preview">Di chuột hoặc nhấn để xem hướng dẫn</div>
                     </div>
                     <div class="card-back">
                     <h4>💡 Hướng dẫn chi tiết:</h4>
@@ -233,9 +238,9 @@
             </div>
         </div>
         <div class="title-start">
-            <h2>Một số lưu ý khi sử dụng</h2>
+            <h2 data-aos="fade-up">Một số lưu ý khi sử dụng</h2>
             <div class="guide-grid">
-                <div class="guide-card">
+                <div class="guide-card" data-aos="fade-up">
                     <h3>Để sử dụng website hiệu quả, người dùng nên lưu ý:</h3>
                     <ul class="unordered-listing-in-getstarted">
                         <li>Nhập đúng tên, ký hiệu hoặc số hiệu nguyên tử khi tìm kiếm.</li>
@@ -251,7 +256,7 @@
                         <li>Thường xuyên theo dõi các cập nhật tính năng mới để nâng cao trải nghiệm học tập.</li>
                     </ul>
                 </div>
-                <div class="guide-card">
+                <div class="guide-card" data-aos="fade-up" data-aos-delay="200">
                     <h3>Một số sai lầm có thể người dùng mắc phải:</h3>
                     <ul class="unordered-listing-in-getstarted">
                         <li>Nhập sai từ khóa tìm kiếm</li>
@@ -271,10 +276,13 @@
             </div>
         </div>
         <div class="guide-ending">
-            <h1>Lời cám ơn đến người dùng</h1>
+            <h1 data-aos="fade-up">Lời cám ơn đến người dùng</h1>
             <div class="ending-view">
                 <img src="./additional/boy-bow.png" alt="Hoàng Nhân" class="side-image">
-                <h3>Dự án bảng tuần hoàn các nguyên tố hóa học này là tâm huyết và thành quả của sự nỗ lực không ngừng nghỉ. Chúng mình xin gửi lời cảm ơn chân thành nhất đến tất cả những người thầy, bạn bè và người dùng đã đồng hành, đóng góp ý kiến quý báu để hoàn thiện trải nghiệm học tập này. Chúc bạn có những giờ phút khám phá tri thức thật bổ ích và thú vị!</h3>
+                <div class="thank-text">
+                    <h3>Dự án bảng tuần hoàn các nguyên tố hóa học này là tâm huyết và thành quả của sự nỗ lực không ngừng nghỉ. Chúng mình xin gửi lời cảm ơn chân thành nhất đến tất cả những người thầy, bạn bè và người dùng đã đồng hành, đóng góp ý kiến quý báu để hoàn thiện trải nghiệm học tập này. Chúc bạn có những giờ phút khám phá tri thức thật bổ ích và thú vị!</h3>
+                    <h2>Xin chân thành cảm ơn</h2>
+                </div>
                 <img src="./additional/girl-bow.png" alt="Kim Thư" class="side-image">
             </div>
            
@@ -283,5 +291,12 @@
     </div>
 
     <footer class="site-footer">Dự án cộng tác của <strong style="color:var(--text)">Kim Thư &amp; Hoàng Nhân</strong> · Học hỏi hôm nay, khám phá ngày mai.</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds (e.g., 1 second)
+            once: true,     // Animation happens only once while scrolling down
+        });
+    </script>
 </body>
 </html>

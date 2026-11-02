@@ -2,6 +2,20 @@ h1 {
     color: var(--second-color);
 }
 
+.thank-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thank-text h3 {
+    text-align: center;
+}
+
+.thank-text h2 {
+    color: var(--second-color);
+}
+
 .unordered-listing-in-getstarted {
     line-height: 30px;
 }
@@ -17,3 +31,4 @@ h1 {
     height: auto;
     flex-shrink: 0;
 }
+

@@ -204,8 +204,15 @@ let allElements = [];
             });
 
             document.getElementById('next-btn').style.display = 'none';
+
+            // TRIGGER ANIMATION ON THE ENTIRE QUIZ CONTAINER BLOCK
+            const quizContainer = document.querySelector('.quiz-container');
+            quizContainer.classList.remove('quiz-card-motion');
+            void quizContainer.offsetWidth; // Trigger a reflow to restart the animation
+            quizContainer.classList.add('quiz-card-motion');
         }
 
+        
         function selectAnswer(selectedBtn, chosen, correct) {
             const allButtons = document.querySelectorAll('.option-btn');
             allButtons.forEach(btn => btn.disabled = true);

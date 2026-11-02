@@ -283,50 +283,40 @@
 }
 
 
-.alkali-metal {
-    background:#ff829e
-}
+.alkali-metal{background: #ff668a; /* Bright Pink-Red */}
+.alkaline-earth{background: #ffab4a; /* Bright Orange */}
+.transition-metal{background: #ffe066; /* Bright Yellow */}
+.post-transition{background: #85f59d; /* Bright Light Green */}
+.metalloid{background: #5efce2; /* Bright Mint/Teal */}
+.nonmetal{background: #52b5ff; /* Bright Cyan-Blue */}
+.noble-gas{background: #e0d1ff; /* Bright Lavender/Purple */}
+.halogen{background: #ffea57; /* Bright Yellow */}
+.lanthanide{background: #ff85e4; /* Bright Magenta */}
+.actinide{background: #ff8073; /* Bright Coral/Salmon */}
+.unknown{background: #ccd6e3; /* Bright Slate/Gray */}
 
-.alkaline-earth {
-    background:#ffc078
-}
-
-.transition-metal {
-    background:#f4d66e
-}
-
-.post-transition {
-    background:#9edb8a
-}
-
-.metalloid {
-    background:#7ddac8
-}
-
-.nonmetal {
-    background:#80c8ff
-}
-
-.noble-gas {
-    background:#c3adff
-}
-
-.lanthanide {
-    background:#f5a7df
-}
-
-.actinide {
-    background:#ef9b91
-}
-
-.unknown {
-    background:#9aa9bc
-}
-
+.modal-card.element-preview.alkali-metal { background: #ff668a !important; }
+.modal-card.element-preview.alkaline-earth { background: #ffab4a !important; }
+.modal-card.element-preview.transition-metal { background: #ffe066 !important; }
+.modal-card.element-preview.post-transition { background: #85f59d !important; }
+.modal-card.element-preview.metalloid { background: #5efce2 !important; }
+.modal-card.element-preview.nonmetal { background: #52b5ff !important; }
+.modal-card.element-preview.halogen { background: #ffea57 !important; }
+.modal-card.element-preview.noble-gas { background: #e0d1ff !important; }
+.modal-card.element-preview.lanthanide { background: #ff85e4 !important; }
+.modal-card.element-preview.actinide { background: #ff8073 !important; }
+.modal-card.element-preview.unknown { background: #ccd6e3 !important; }
 
 .table-note {
-    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.78rem;margin-top:12px
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    color:var(--muted);
+    font-size:.78rem;
+    margin-top:12px
 }
+
 
 
 #empty-state {
@@ -407,12 +397,27 @@
         grid-template-columns:1fr
     }
 
+    .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: visible !important;
+        gap: 10px;
+        height: auto !important;
+        align-items: center;
+    }
+
     .hero-art {
         display:none
     }
 
     .hero h1 {
         font-size:2.45rem
+    }
+
+    .start-btn {
+        margin-right: 0;
+        text-align: center;
     }
 
     .tools-panel {
@@ -449,6 +454,11 @@
 
     #detail-modal {
         padding:16px;border-radius:17px
+    }
+
+    .Mendeleev {
+        flex-direction: column;
+        align-self: center;
     }
 
 }
@@ -606,6 +616,28 @@
     transition: ease-in 0.14s ;
 }
 
+#quiz-body {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+@keyframes slideCardIn {
+    0% {
+        opacity: 0;
+        transform: translateY(25px) scale(0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.quiz-card-motion {
+    animation: slideCardIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
 /* getstarted.html */
 
 .view {
@@ -616,7 +648,7 @@
 }
 
 .introduction {
-
+    text-align: center;
 }
 
 .intro {
@@ -752,3 +784,84 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* Dmitri */
+.Mendeleev {
+    display: flex;
+    margin-top: 55px;
+    min-height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#Dmitri {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 300px;    
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 50% !important;
+}
+
+.about-author {
+    margin-left: 40px;
+}
+
+.mendeleev-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mendeleev-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.mendeleev-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent, #5efce2);
+}
+
+.mendeleev-card strong {
+    color: var(--accent, #5efce2);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.mendeleev-card p {
+    margin: 0;
+    color: var(--text, #fff);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .mendeleev-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .mendeleev-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
