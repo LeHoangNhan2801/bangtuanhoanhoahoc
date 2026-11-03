@@ -15,39 +15,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="site-nav">
-        <div class="nav-inner">
-            <a class="brand" href="index.html">
-                <span class="brand-mark"><i class="fa-solid fa-atom"></i></span>NGUYÊN TỐ<span style="color:var(--accent)">.</span>
-            </a>
+    <header class="site-nav"><div class="nav-inner">
+        <a class="brand" href="./index.html"><span class="brand-mark"><i class="fa-solid fa-atom"></i></span>NGUYÊN TỐ<span style="color:var(--accent)">.</span></a>
             <span class="nav-tag">
-                <svg class="pointer-arrow" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <!-- Arrowhead Marker -->
-                            <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent)" />
-                            </marker>
-                        </defs>
-
-                        <!-- Curved Dashed Path pointing to the button -->
-                        <path d="M 20 80 Q 100 10 175 45" 
-                                fill="none" 
-                                stroke="var(--accent)" 
-                                stroke-width="3" 
-                                stroke-dasharray="6,6" 
-                                stroke-linecap="round"
-                                marker-end="url(#arrow)" />
-                </svg>
                 <div class="start-and-solo">
                     <a href="./getstarted.html" class="intro-link">
-                    <button class="start-btn" type="button">Bắt đầu</button>
+                    <button class="start-btn start-btn-navbar" type="button">
+                        <i class="fa-solid fa-play"></i>
+                        <div class="start-text">Bắt đầu</div> 
+                    </button>
                     </a>
                     <div class="area">
-                        <i class="fa-solid fa-flask me-2"></i>Không gian khám phá hóa học 
+                        <div class="divide">|</div>
+                        <div class="solo-icon">
+                        <i class="fa-solid fa-compass"></i>
+                        </div>
+                        Không gian khám phá hóa học 
                     </div>
                 </div>
-            </span>   
-        </div>
+            </span>  
     </header>
     <div class="view">
         <div class="view-logo">
@@ -167,10 +153,10 @@
         <div class="title-start">
             <h2 data-aos="fade-up">Giới thiệu chung</h2>
             <div class="guide-grid">
-                <div class="card-front">
+                <div class="card-front" data-aos="fade-up">
                     <p>Website Bảng tuần hoàn các nguyên tố hóa học được xây dựng nhằm hỗ trợ người dùng tra cứu, tìm hiểu và học tập về 118 nguyên tố hóa học một cách thuận tiện. Trang web có giao diện hiện đại, cách trình bày trực quan và các chức năng tìm kiếm, phân loại nguyên tố, xem thông tin chi tiết.</p>
                 </div>
-                <div class="card-front">
+                <div class="card-front" data-aos="fade-up">
                     <p>Thông qua website, người dùng có thể tiếp cận kiến thức hóa học dễ dàng hơn, tiết kiệm thời gian tra cứu và nâng cao hiệu quả học tập.</p>
             </div>
         </div>

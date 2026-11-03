@@ -15,47 +15,43 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-nav">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark"><i class="fa-solid fa-atom"></i></span>NGUYÊN TỐ<span style="color:var(--accent)">.</span>
-      </a>
-      <span class="nav-tag">
-          <svg class="pointer-arrow" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                      <!-- Arrowhead Marker -->
-                      <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3.5" orient="auto">
-                      <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent)" />
-                      </marker>
-                  </defs>
-
-                  <!-- Curved Dashed Path pointing to the button -->
-                  <path d="M 20 80 Q 100 10 175 45" 
-                          fill="none" 
-                          stroke="var(--accent)" 
-                          stroke-width="3" 
-                          stroke-dasharray="6,6" 
-                          stroke-linecap="round"
-                          marker-end="url(#arrow)" />
-          </svg>
-          <div class="start-and-solo">
-              <a href="./getstarted.html" class="intro-link">
-              <button class="start-btn" type="button">Bắt đầu</button>
-              </a>
-              <div class="area">
-                  <i class="fa-solid fa-flask me-2"></i>Không gian khám phá hóa học 
-              </div>
-          </div>
-      </span> 
-    </div>
+  <header class="site-nav"><div class="nav-inner">
+        <a class="brand" href="./index.html"><span class="brand-mark"><i class="fa-solid fa-atom"></i></span>NGUYÊN TỐ<span style="color:var(--accent)">.</span></a>
+            <span class="nav-tag">
+                <div class="start-and-solo">
+                    <a href="./getstarted.html" class="intro-link">
+                    <button class="start-btn start-btn-navbar" type="button">
+                        <i class="fa-solid fa-play"></i>
+                        <div class="start-text">Bắt đầu</div> 
+                    </button>
+                    </a>
+                    <div class="area">
+                        <div class="divide">|</div>
+                        <div class="solo-icon">
+                        <i class="fa-solid fa-compass"></i>
+                        </div>
+                        Không gian khám phá hóa học 
+                    </div>
+                </div>
+            </span>  
   </header>
   <main class="page-shell">
     <section class="hero" data-aos="fade-up">
       <div>
         <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Chemistry explorer</span>
         <h1>Khám phá thế giới<br><span>nguyên tố hóa học.</span></h1>
-        <p>118 nguyên tố, vô vàn điều kỳ thú. Tìm kiếm, phân loại và nhấn vào từng nguyên tố để khám phá những thông tin quan trọng.</p>
-        <div class="stats"><div class="stat"><strong>118</strong> nguyên tố</div><div class="stat"><strong>18</strong> nhóm</div><div class="stat"><strong>7</strong> chu kỳ</div></div>
+        <p>118 nguyên tố, vô vàn điều kỳ thú. Tìm kiếm, phân loại và nhấn vào từng nguyên tố để khám phá những thông tin quan trọng về cấu tạo, tính chất và ứng dụng thực tế.</p>
+        <div class="stats">
+          <div class="stat">
+            <i class="fa-solid fa-cube" class="icon-hero" style="color: lightblue;"></i><strong>118</strong> nguyên tố
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-layer-group" class="icon-hero" style="color: plum;"></i><strong>18</strong> nhóm
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-bars" class="icon-hero" style="color: #85f59d;"></i><strong>7</strong> chu kỳ
+          </div>
+        </div>
       </div>
       <div class="hero-art" aria-hidden="true" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-atom"></i></div>
     </section>
@@ -71,7 +67,7 @@
     </div>
     </div>
     <div class="actions" data-aos="fade-up" data-aos-delay="200">
-      <a href="quiz.html" class="action-link primary"><i class="fa-solid fa-brain me-2"></i>Luyện tập kiến thức</a>
+      <a href="quiz.html" class="action-link primary"><i class="fa-solid fa-graduation-cap"></i>Luyện tập kiến thức</a>
       <a href="quiz.html?mode=daily" class="action-link daily"><i class="fa-solid fa-calendar-check me-2"></i>Thử thách hằng ngày</a>
     </div>
     <div class="legend" aria-label="Chú giải màu" data-aos="fade-up" data-aos-delay="250">

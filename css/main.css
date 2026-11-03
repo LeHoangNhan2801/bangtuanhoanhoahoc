@@ -8,6 +8,10 @@
     margin:8px 0 28px
 }
 
+.icon-hero {
+    padding: 10px;
+}
+
 .eyebrow {
     display:inline-flex;
     align-items:center;
@@ -30,7 +34,10 @@
 }
 
 .hero h1 span {
-    color:var(--accent)
+    background: linear-gradient(135deg, #00FF87 0%, #60EFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero p {
     color:var(--muted);
@@ -70,13 +77,14 @@
     background:#0d1a2b;
     border-radius:13px;
     color:var(--muted);
-    font-size:.82rem
+    font-size:.82rem;
 }
 
 .stat strong {
     color:var(--text);
     font-size:1rem;
-    margin-right:5px
+    margin-right:5px;
+    margin-left: 10px;
 }
 
 
@@ -127,6 +135,41 @@
     color:#7387a2
 }
 
+@keyframes elementFadeUp {
+    0% {
+        opacity: 0.2;
+        transform: translateY(16px) scale(0.96);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes elementFadeDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0.2;
+        transform: translateY(16px) scale(0.96);
+        filter: brightness(0.7) grayscale(0.3);
+    }
+}
+
+.element-tile.fade-up {
+    animation: elementFadeUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.element-tile.fade-down {
+    animation: elementFadeDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    z-index: 1;
+    pointer-events: none; /* Vô hiệu hóa click vào các ô bị mờ */
+}
+
 
 .filters {
     display:flex;
@@ -166,6 +209,13 @@
     gap:9px;
     flex-wrap:wrap;
     margin:15px 0 22px
+}
+
+.action-link {
+    display: flex;
+    min-width: 245px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .action-link.primary {
@@ -480,7 +530,7 @@
     border: 1px solid #334155;
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgb(30, 41, 59);
     color: #f8fafc;
 }
 
@@ -602,7 +652,7 @@
     color: #fff;
     border: none;
     padding: 10px 24px;
-    border-radius: 8px;
+    border-radius: 100px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;

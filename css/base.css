@@ -42,10 +42,31 @@ body {
     width: 100%
 }
 
+.start-btn-navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
 .start-and-solo {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+}
+
+.area {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.divide {
+    margin: 10px;
+}
+
+.solo-icon {
+    color: var(--accent);
+    margin-right: 10px;
 }
 
 

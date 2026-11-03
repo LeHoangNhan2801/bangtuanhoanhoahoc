@@ -79,8 +79,21 @@
    table.querySelectorAll('.element-tile').forEach(tile => {
      const matchesText = !term || tile.dataset.search.includes(term);
      const matchesCategory = activeCategory === 'all' || tile.dataset.category === activeCategory;
-     tile.hidden = !(matchesText && matchesCategory);
-     if (!tile.hidden) visible++;
+     if (matchesText && matchesCategory) {
+       tile.style.display = '';
+       tile.classList.remove('fade-down');
+       tile.classList.add('fade-up');
+       visible++;
+     } else 
+      {
+       if (matchesText) {
+         tile.style.display = '';
+         tile.classList.remove('fade-up');
+         tile.classList.add('fade-down');
+       } else {
+         tile.style.display = 'none';
+       }
+     }
    });
    empty.style.display = visible ? 'none' : 'block';
    count.textContent = `Đang hiển thị ${visible} / ${elements.length} nguyên tố`;
