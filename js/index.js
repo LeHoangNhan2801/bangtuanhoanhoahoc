@@ -29,9 +29,8 @@
  function groupOf(el) {
    const cls = categoryClass(el.category);
    if (cls === 'noble-gas') return 'noble';
-   if (cls === 'nonmetal') return 'nonmetal';
+   if (['nonmetal','halogen'].includes(cls) === 'nonmetal') return 'nonmetal';
    if (cls === 'metalloid') return 'metalloid';
-   if (cls === 'halogen') return 'halogen';
    if (['alkali-metal','alkaline-earth','transition-metal','post-transition','lanthanide','actinide'].includes(cls)) return 'metal';
    return 'unknown';
  }
